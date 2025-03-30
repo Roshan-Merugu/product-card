@@ -1,0 +1,69 @@
+# Avoid accidental upload of design files
+*.sketch
+*.fig
+*.xd
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore node_modules if using Node.js for any tooling
+node_modules/
+
+# Ignore build or dist folders if applicable
+dist/
+build/
+
+# Ignore environment files
+.env
+.env.local
+
+# Ignore IDE-specific files
+.vscode/
+.idea/
+
+# Ignore log files
+*.log
+
+# Ignore temporary files
+*.tmp
+*.swp
+
+# Ignore Prettier configuration files
+.prettierignore
+
+# Ignore screenshots or design previews
+screenshots/
+design/
+# Ignore Windows system files
+*.log
+*.dat
+*.ini
+Thumbs.db
+.DS_Store
+
+# Ignore Windows user folders
+AppData/
+OneDrive/
+Documents/
+Downloads/
+Music/
+Videos/
+Saved Games/
+Searches/
+Contacts/
+Links/
+Favorites/
+NTUSER.DAT*
+# Ignore system files
+AppData/
+OneDrive/
+Documents/
+Downloads/
+Favorites/
+Music/
+Videos/
+Saved Games/
+Searches/
+NTUSER.DAT*
+*.log

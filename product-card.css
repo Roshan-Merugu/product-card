@@ -1,0 +1,172 @@
+/* General Styles */
+body {
+    background-color: hsl(30, 38%, 92%);
+    padding: auto;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.perfume-container {
+    border-radius: 15px;
+    background-color: white;
+    margin: auto;
+    display: flex;
+    flex-direction: row; /* Default for desktop */
+    height: 400px;
+    width: 500px; /* Default width for desktop */
+    overflow: hidden; /* Ensure rounded corners */
+}
+
+.perfume-image {
+    height: 100%; /* Full height for desktop */
+    width: 250px; /* Fixed width for desktop */
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.info-card {
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.perfume {
+    font-family: "Montserrat";
+    font-size: 10px;
+    font-weight: 700;
+    color: hsl(228, 12%, 48%);
+    letter-spacing: 3px;
+}
+
+h1 {
+    font-family: "Fraunces";
+    font-weight: 700;
+    font-style: normal;
+    font-size: 25px;
+    color: hsl(212, 21%, 14%);
+    text-align: left !important;
+}
+
+p {
+    font-family: "Montserrat";
+    font-size: 13px;
+    font-weight: 500;
+    color: hsl(228, 12%, 48%);
+    text-align: left !important;
+}
+
+#price {
+    color: hsl(158, 36%, 37%);
+    font-family: "fraunces";
+    font-size: 23px;
+}
+
+#cut-off-price {
+    color: hsl(228, 12%, 48%);
+    font-size: 12px;
+    text-decoration: line-through;
+    text-align: left;
+    padding-top: 7px;
+    margin-left: 10px !important;
+}
+
+.price {
+    display: flex;
+    flex-direction: row;
+    padding: auto !important;
+    justify-content: left;
+    text-align: left;
+    align-items: left;
+    margin-bottom: auto;
+}
+
+.button {
+    background-color: hsl(158, 36%, 37%);
+    text-align: center;
+    align-items: center;
+    width: 200px;
+    height: 40px;
+    border-radius: 10px;
+    border-style: none;
+    border-width: 0;
+    font-family: "Montserrat";
+    color: white;
+    font-weight: 700;
+    margin-bottom: auto !important;
+}
+
+.button:hover {
+    background-color: hsl(158, 42%, 18%);
+}
+
+.button:active {
+    background-color: hsl(158, 42%, 18%);
+}
+
+.button:focus {
+    background-color: hsl(158, 42%, 18%);
+    outline: none;
+}
+
+.attribution {
+    text-align: center;
+    margin-top: auto !important;
+    font-family: "inter";
+    font-size: 13px;
+    font-weight: bold;
+}
+
+/* Mobile Styles */
+@media (max-width: 576px) {
+    .perfume-container {
+        flex-direction: column !important; /* Stack image and content vertically */
+        height: auto; /* Adjust height for responsiveness */
+        width: 300px; /* Fixed width for mobile */
+        align-items: center; /* Center align content */
+    }
+
+    .perfume-image {
+        width: 100%; /* Full width for mobile */
+        height: auto; /* Maintain aspect ratio */
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+
+    .info-card {
+        padding: 16px;
+        text-align: left; /* Center text for mobile */
+        align-items: left; /* Center align content */
+        padding: auto;
+        width:100%;
+    }
+
+    h1 {
+        text-align: center; /* Center the heading for mobile */
+    }
+
+    p {
+        text-align: center; /* Center the paragraph for mobile */
+    }
+
+    .price {
+        display: flex;
+        flex-direction: column; /* Stack prices vertically */
+        align-items: center; /* Center align prices */
+    }
+
+    #cut-off-price {
+        margin-left: 0; /* Remove margin for mobile */
+        margin-top: 5px; /* Add spacing between prices */
+    }
+
+    .button {
+        width: 100%; /* Full width for mobile */
+        margin-top: 10px; /* Add spacing above the button */
+    }
+}
